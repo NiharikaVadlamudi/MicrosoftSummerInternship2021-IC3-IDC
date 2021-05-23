@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X56diLBy9Kvv+ax1YECRgy0HJuXO+Nf1X6HDJo9g98EsNoZwUi9LeQ6jkhpQfs1LB3wnGJS3MgFMLbWyjKkkTQ==",
+  "dgSpecHash": "NNpPgAhgbrr6vMyv5sIITVBCzu1YnTfcKS9MOwkpne2xSj56nlJtw7oJpHehSjswmKmplI+3VKtXaY/3BjMIrA==",
   "success": true,
-  "projectFilePath": "/Users/niharikavadlamudi/Desktop/Projects/CosmosAPIV21/CosmosAPIV21/CosmosAPIV21.csproj",
+  "projectFilePath": "/Users/niharikavadlamudi/Desktop/Ammamma/CosmosAPIV21/CosmosAPIV21.csproj",
   "expectedPackageFiles": [
     "/Users/niharikavadlamudi/.nuget/packages/microsoft.azure.documentdb.core/2.14.1/microsoft.azure.documentdb.core.2.14.1.nupkg.sha512",
     "/Users/niharikavadlamudi/.nuget/packages/microsoft.netcore.platforms/1.1.1/microsoft.netcore.platforms.1.1.1.nupkg.sha512",

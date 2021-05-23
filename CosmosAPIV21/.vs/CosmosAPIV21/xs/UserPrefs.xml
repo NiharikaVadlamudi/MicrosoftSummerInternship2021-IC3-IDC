@@ -2,17 +2,24 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Properties/launchSettings.json">
     <Files>
       <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Controllers/ItemController.cs" Line="22" Column="53" />
+      <File FileName="Program.cs" Line="17" Column="1" />
+      <File FileName="Models/Item.cs" Line="3" Column="34" />
+      <File FileName="appsettings.Development.json" Line="14" Column="31" />
+      <File FileName="appsettings.json" Line="12" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CosmosAPIV21" expanded="True">
             <Node name="CosmosAPIV21" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True">
-                <Node name="launchSettings.json" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ItemController.cs" selected="True" />
               </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>

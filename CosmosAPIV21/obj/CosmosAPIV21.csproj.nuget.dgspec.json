@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/niharikavadlamudi/Desktop/Projects/CosmosAPIV21/CosmosAPIV21/CosmosAPIV21.csproj": {}
+    "/Users/niharikavadlamudi/Desktop/Ammamma/CosmosAPIV21/CosmosAPIV21.csproj": {}
   },
   "projects": {
-    "/Users/niharikavadlamudi/Desktop/Projects/CosmosAPIV21/CosmosAPIV21/CosmosAPIV21.csproj": {
+    "/Users/niharikavadlamudi/Desktop/Ammamma/CosmosAPIV21/CosmosAPIV21.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/niharikavadlamudi/Desktop/Projects/CosmosAPIV21/CosmosAPIV21/CosmosAPIV21.csproj",
+        "projectUniqueName": "/Users/niharikavadlamudi/Desktop/Ammamma/CosmosAPIV21/CosmosAPIV21.csproj",
         "projectName": "CosmosAPIV21",
-        "projectPath": "/Users/niharikavadlamudi/Desktop/Projects/CosmosAPIV21/CosmosAPIV21/CosmosAPIV21.csproj",
+        "projectPath": "/Users/niharikavadlamudi/Desktop/Ammamma/CosmosAPIV21/CosmosAPIV21.csproj",
         "packagesPath": "/Users/niharikavadlamudi/.nuget/packages/",
-        "outputPath": "/Users/niharikavadlamudi/Desktop/Projects/CosmosAPIV21/CosmosAPIV21/obj/",
+        "outputPath": "/Users/niharikavadlamudi/Desktop/Ammamma/CosmosAPIV21/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/niharikavadlamudi/.config/NuGet/NuGet.Config"

@@ -1,6 +1,7 @@
 ﻿using System;
 using CosmosAPIV21.Models;
 
+
 //Add These
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -45,13 +46,14 @@ namespace CosmosAPIV21.Controllers
                 new FeedOptions { MaxItemCount = 20 });
         }
 
-        [HttpGet("{id}")]
-        public IQueryable<Item> Get(string id)
+        [HttpGet("{department}")]
+        public IQueryable<Item> GetDept(string department)
         {
             return _documentClient.CreateDocumentQuery<Item>(UriFactory.CreateDocumentCollectionUri(databaseId, collectionId),
-                new FeedOptions { MaxItemCount = 1 }).Where((i) => i.Id == id);
+                new FeedOptions { MaxItemCount = -1 }).Where((i) => i.Department == department);
         }
 
+       
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Item item)
         {
