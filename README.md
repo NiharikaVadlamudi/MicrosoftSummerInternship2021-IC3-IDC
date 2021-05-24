@@ -7,7 +7,7 @@ My work accross 8 weeks @Microsoft IDC Office for IC3 Config Admin Scenario !
 - NuGet Package Installation : 
   - Microsoft Azure DocumentDB Core (2.14.1)
   - Newtonsoft Json (13.0.1) 
-- Launch Postman , to get various WEB APIs ( Few cases under DEMO Folder ) 
+- Launch Postman , to test various WEB APIs ( Few cases under DEMO Folder ) 
     - https://app.getpostman.com/join-team?invite_code=fc90c76446ba44c81591b87bb766ecf2 
 
 ## Week 2 
@@ -20,7 +20,7 @@ Operations Available :
 - POST 
     - Add new user to the database . 
 - DELETE 
-   - Delete the selected user . 
+   - Delete the selected user (via ID) . 
 
 
 
