@@ -14,13 +14,13 @@ My work accross 8 weeks @Microsoft IDC Office for IC3 Config Admin Scenario !
 **Target** : Create  a  sample database (proper schema) on Azure Cosmos DB and create  simple REST API using ASP.Net Core.
 Operations Available : 
 - GET (Users)
+    - Fetches all the users present in the database . 
 - GET (by Department) 
+    - Group by Departments (Eg:SovCloudHyd)
 - POST 
+    - Add new user to the database . 
 - DELETE 
-
-### PostMan Testing Link 
-(Please send a request)
-- https://app.getpostman.com/join-team?invite_code=fc90c76446ba44c81591b87bb766ecf2 
+   - Delete the selected user . 
 
 
 
