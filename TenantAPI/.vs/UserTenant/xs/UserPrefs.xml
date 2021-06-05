@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{2CE90D46-D06C-4D92-B70E-9D2E24C27B5F}|BookStoreAspNetCoreOData8Preview">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+    <Files>
+      <File FileName="Startup.cs" Line="71" Column="1" IsPinned="True" />
+      <File FileName="Models/User.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="Models/OnlineDialinConferencingPolicy.cs" />
+      <File FileName="Models/AssignedPlans.cs" />
+      <File FileName="Models/UserStoreContext.cs" />
+      <File FileName="Program.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UserTenant" expanded="True">
+            <Node name="UserTenant" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.UserTenant PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
