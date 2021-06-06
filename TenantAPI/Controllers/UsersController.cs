@@ -88,7 +88,7 @@ namespace BookStore.Controllers
         }
 
         [EnableQuery]
-        [HttpPost]
+        [HttpPut]
         public IActionResult Put(int key,[FromBody] User userPatch)
         {
             //Method 1 
