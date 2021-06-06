@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Microsoft.EntityFrameworkCore;
 
-
-
-namespace BookStore.Models
+namespace UserStore.Models
 {
-  
+    [Owned]
     public class OnlineDialinConferencingPolicy
     {
         [Key]
-        [Newtonsoft.Json.JsonProperty("authority")]
+        [Newtonsoft.Json.JsonProperty("Authority")]
         public string authority { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("name")]
+        [Newtonsoft.Json.JsonProperty("Name")]
         public string name { get; set; }
     }
 }

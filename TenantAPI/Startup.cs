@@ -1,4 +1,3 @@
-using BookStore.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -15,6 +14,7 @@ using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
 using System.Collections.Generic;
 using System.Linq;
+using UserStore.Models;
 
 namespace BookStoreAspNetCoreOData8Preview
 {
@@ -63,7 +63,7 @@ namespace BookStoreAspNetCoreOData8Preview
         private static IEdmModel GetEdmModel()
         {
             ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
-            builder.EntitySet<User>("Books");
+            builder.EntitySet<User>("Users");
             return builder.GetEdmModel();
         }
     }

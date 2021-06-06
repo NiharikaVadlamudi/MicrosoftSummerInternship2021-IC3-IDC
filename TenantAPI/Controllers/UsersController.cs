@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Linq;
 using System.Net;
-using BookStore.Models;
+using UserStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 using Microsoft.EntityFrameworkCore;
+using UserStore.Controllers;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace BookStore.Controllers
+namespace UserStore.Controllers
 {
-    public class BooksController : ODataController
+    public class UsersController : ODataController
     {
         private UserStoreContext _db;
 
-        public BooksController(UserStoreContext context)
+        public UsersController(UserStoreContext context)
         {
             _db = context;
             _db.Database.EnsureCreated();
@@ -28,21 +29,22 @@ namespace BookStore.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_db.Books);
+            return Ok(_db.Users);
         }
 
         [EnableQuery]
         [HttpGet]
         public IActionResult Get(int key, string version)
         {
-            User reqBook = _db.Books.FirstOrDefault(c => c.tenantId == key);
+            User reqUser = _db.Users.FirstOrDefault(c => c.tenantId == key);
             try
             {
-                return Ok(_db.Books.FirstOrDefault(c => c.tenantId == key));
+                return Ok(_db.Users.FirstOrDefault(c => c.tenantId == key));
             }
 
             catch (Exception e)
             {
+                
                 return NotFound(e.Message);
             }
 
@@ -50,13 +52,13 @@ namespace BookStore.Controllers
 
         [EnableQuery]
         [HttpPost]
-        public IActionResult Post([FromBody] User book)
+        public IActionResult Post([FromBody] User userObj)
         {
            try
            {
-               _db.Books.Add(book);
+               _db.Users.Add(userObj);
                _db.SaveChanges();
-               return Ok(Created(book));
+               return Ok(Created(userObj));
 
            }
            catch (Exception e)
@@ -71,11 +73,11 @@ namespace BookStore.Controllers
         [HttpDelete]
         public IActionResult Delete(int key)
         {
-            User b = _db.Books.FirstOrDefault(c => c.tenantId == key);
+            User b = _db.Users.FirstOrDefault(c => c.tenantId == key);
 
             try
             {
-                _db.Books.Remove(b);
+                _db.Users.Remove(b);
                 _db.SaveChanges();
                 return Ok();
             }
@@ -92,7 +94,7 @@ namespace BookStore.Controllers
         public IActionResult Put(int key,[FromBody] User userPatch)
         {
             //Method 1 
-            //User foundUser =_db.Books.FirstOrDefault(c => c.tenantId == key);
+            //User foundUser =_db.Users.FirstOrDefault(c => c.tenantId == key);
             //_db.Entry(foundUser).CurrentValues.SetValues(userPatch);
             //_db.SaveChanges();
             //return Ok();
@@ -108,7 +110,7 @@ namespace BookStore.Controllers
                 return BadRequest();
             }
 
-            User reqUser = _db.Books.FirstOrDefault(x => x.tenantId == key);
+            User reqUser = _db.Users.FirstOrDefault(x => x.tenantId == key);
 
             if (reqUser == null)
             {

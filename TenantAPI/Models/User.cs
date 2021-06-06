@@ -8,22 +8,28 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BookStore.Models
+namespace UserStore.Models
 {
     public class User
     {
         [Key]
         [Newtonsoft.Json.JsonProperty("tenantId")]
-        //[Required(ErrorMessage = "Invalid Input : TenantID")]
+        [Required(ErrorMessage = "Invalid Input : TenantID")]
         public int tenantId { get; set; }
 
+        [Required]
+        [Newtonsoft.Json.JsonProperty("Partition Key ")]
+        public string partitionKey { get; set; }
+
+
+        [Required]
         [Newtonsoft.Json.JsonProperty("displayName")]
         public string displayName { get; set; }
 
-        [Required(ErrorMessage = "Invalid Input : ObjectID (PartitionKey)")]
+        [Required(ErrorMessage = "Invalid Input : ObjectID")]
         public string objectId { get; set; }
 
-
+        
         [Newtonsoft.Json.JsonProperty("givenName")]
         public string givenName { get; set; }
 
@@ -43,14 +49,10 @@ namespace BookStore.Models
         public string userPrincipalName { get; set; }
 
 
-        //Addition of other transaction classes.
-
+        //Addition of other transaction classes
         public DataProviderErrors dataProviderErrors { get; set; }
         public OnlineDialinConferencingPolicy onlineDialinConferencingPolicy { get; set; }
-        //public List<AssignedPlans> assignedPlans { get; set; }
-
-
-
+        public ICollection<AssignedPlans> assignedPlans { get; set; }
 
     }
 

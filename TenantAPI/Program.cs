@@ -1,5 +1,5 @@
-using BookStore.Models;
-using BookStore.Controllers;
+using UserStore.Models;
+using UserStore.Controllers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;

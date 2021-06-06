@@ -7,12 +7,11 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BookStore.Models
+namespace UserStore.Models
 {
-    
+    [Owned]
     public class AssignedPlans
     {
-        
         [Key]
         [Newtonsoft.Json.JsonProperty("servicePlanID")]
         [Required(ErrorMessage = "Invalid Input : ServicePlanID field")]
@@ -39,8 +38,7 @@ namespace BookStore.Models
         [Required(ErrorMessage = "Invalid Input : Capability field")]
         public string capability { get; set; }
 
-        //Navigation Properties .
-        public User User { get; set; }
+        
 
     }
 }

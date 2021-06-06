@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BookStore.Models
+namespace UserStore.Models
 {
     public class DataProviderErrors
     {

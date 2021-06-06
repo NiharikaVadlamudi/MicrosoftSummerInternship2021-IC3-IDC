@@ -4529,11 +4529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/niharikavadlamudi/Desktop/AS/UserTenant/UserTenant.csproj",
+      "projectUniqueName": "/Users/niharikavadlamudi/Desktop/TenantAPI/UserTenant.csproj",
       "projectName": "UserTenant",
-      "projectPath": "/Users/niharikavadlamudi/Desktop/AS/UserTenant/UserTenant.csproj",
+      "projectPath": "/Users/niharikavadlamudi/Desktop/TenantAPI/UserTenant.csproj",
       "packagesPath": "/Users/niharikavadlamudi/.nuget/packages/",
-      "outputPath": "/Users/niharikavadlamudi/Desktop/AS/UserTenant/obj/",
+      "outputPath": "/Users/niharikavadlamudi/Desktop/TenantAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/niharikavadlamudi/.config/NuGet/NuGet.Config"
