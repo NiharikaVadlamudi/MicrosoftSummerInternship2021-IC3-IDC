@@ -48,23 +48,23 @@ namespace BookStore.Controllers
 
         }
 
-        //[EnableQuery]
-        //[HttpPost]
-        //public IActionResult Post([FromBody] User book)
-        //{
-        //    try
-        //    {
-        //        _db.Books.Add(book);
-        //        _db.SaveChanges();
-        //        return Ok(Created(book));
+        [EnableQuery]
+        [HttpPost]
+        public IActionResult Post([FromBody] User book)
+        {
+           try
+           {
+               _db.Books.Add(book);
+               _db.SaveChanges();
+               return Ok(Created(book));
 
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return BadRequest(e.Message);
-        //    }
+           }
+           catch (Exception e)
+           {
+               return BadRequest(e.Message);
+           }
 
-        //}
+        }
 
 
         [EnableQuery]
