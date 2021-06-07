@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{2CE90D46-D06C-4D92-B70E-9D2E24C27B5F}|BookStoreAspNetCoreOData8Preview">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/UsersController.cs">
+    <Files>
+      <File FileName="Startup.cs" Line="67" Column="45" IsPinned="True" />
+      <File FileName="Controllers/UsersController.cs" Line="30" Column="34" />
+      <File FileName="Models/User.cs" Line="49" Column="1" />
+      <File FileName="Models/UserStoreContext.cs" Line="22" Column="9" />
+      <File FileName="Program.cs" Line="18" Column="1" />
+      <File FileName="Models/AssignedPlans.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UserTenant" expanded="True">
+            <Node name="UserTenant" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="UsersController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Wrapper" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.UserTenant PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

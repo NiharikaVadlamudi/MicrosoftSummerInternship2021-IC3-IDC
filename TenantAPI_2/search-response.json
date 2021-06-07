@@ -1,0 +1,75 @@
+{
+    "users": [
+        {
+            "assignedPlans": [
+                {
+                    "serviceInstance": "TeamspaceAPI/NA001",
+                    "servicePlanId": "57ff2da0-773e-42df-b2af-ffb7a2317929",
+                    "subscribedPlanId": "9999cbde-1921-46e3-b161-278607fc7f83",
+                    "assignedTimestamp": "2017-09-27T23:53:13Z",
+                    "capabilityStatus": "Enabled",
+                    "capability": "Teams"
+                },
+                {
+                    "serviceInstance": "MicrosoftCommunicationsOnline/NOAM-0M-DMT",
+                    "servicePlanId": "4828c8ec-dc2e-4779-b502-87ac9ce28ab7",
+                    "subscribedPlanId": "059af172-a28d-4391-86dd-009e1bfa9be8",
+                    "assignedTimestamp": "2017-09-27T23:53:13Z",
+                    "capabilityStatus": "Enabled",
+                    "capability": "MCOEV"
+                },
+                {
+                    "serviceInstance": "MicrosoftCommunicationsOnline/NOAM-0M-DMT",
+                    "servicePlanId": "3e26ee1f-8a5f-4d52-aee2-b81ce45c8f40",
+                    "subscribedPlanId": "2025e2f0-e849-4261-a390-7c013c549b29",
+                    "assignedTimestamp": "2017-09-27T23:53:13Z",
+                    "capabilityStatus": "Enabled",
+                    "capability": "MCOMEETADD"
+                },
+                {
+                    "serviceInstance": "MicrosoftCommunicationsOnline/NOAM-0M-DMT",
+                    "servicePlanId": "0feaeb32-d00e-4d66-bd5a-43b5b83db82c",
+                    "subscribedPlanId": "4b8e41f8-ad4e-4125-b41b-3b1ad76a2768",
+                    "assignedTimestamp": "2017-09-27T23:53:13Z",
+                    "capabilityStatus": "Enabled",
+                    "capability": "MCOProfessional"
+                }
+            ],
+            "dataProviderErrors": {},
+            "displayName": "Li Zhang1",
+            "enterpriseVoiceEnabled": true,
+            "givenName": "Li1",
+            "interpretedUserType": "PureOnlineEnabledUserWithSfBAndTeamsLicense",
+            "objectId": "5a84fa48-f26d-455e-94c2-bf2064bf27b1",
+            "onlineDialinConferencingPolicy": {
+                "authority": "Host",
+                "name": "ServiceAllowed"
+            },
+            "surname": "Zhang",
+            "usageLocation": "US",
+            "userPrincipalName": "lizhan1@E2ETest0MDM2P002.onmicrosoft.com"
+        }
+    ]
+}
+
+
+######
+
+Testing out purpose
+{    
+    {    
+        "Id":1,
+        "TenantId":"121",
+        "DisplayName": "Li Zhang1",
+        "EnterpriseVoiceEnabled": true,
+        "GivenName": "Li1",
+        "InterpretedUserType": "PureOnlineEnabledUserWithSfBAndTeamsLicense",
+        "ObjectId": "5a84fa48-f26d-455e-94c2-bf2064bf27b1",
+        "Surname": "Zhang",
+        "UsageLocation": "US",
+        "UserPrincipalName": "lizhan1@E2ETest0MDM2P002.onmicrosoft.com",
+        "Department":"SOVCloudHyd"
+    }
+}
+
+########

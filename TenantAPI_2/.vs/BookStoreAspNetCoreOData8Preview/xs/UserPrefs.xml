@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{2CE90D46-D06C-4D92-B70E-9D2E24C27B5F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BooksController.cs">
+    <Files>
+      <File FileName="Controllers/BooksController.cs" Line="66" Column="1" IsPinned="True" />
+      <File FileName="Startup.cs" Line="45" Column="36" />
+      <File FileName="Models/Address.cs" Line="42" Column="25" />
+      <File FileName="Models/Book.cs" Line="68" Column="12" />
+      <File FileName="OnlineDialinConferencingPolicy.cs" Line="16" Column="14" />
+      <File FileName="Models/DataProviderErrors.cs" Line="2" Column="7" />
+      <File FileName="Models/BookStoreContext.cs" Line="29" Column="1" />
+      <File FileName="Program.cs" Line="17" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BookStoreAspNetCoreOData8Preview" expanded="True">
+            <Node name="BookStoreAspNetCoreOData8Preview" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.UserTenant PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
