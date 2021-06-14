@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{C756F25A-FDC8-48E1-A344-5570E8A500E6}|Default">
+  <MonoDevelop.Ide.ItemProperties.Microsoft.Azure.Cosmos.Samples.Bulk PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="33" Column="38" />
+      <File FileName="OnlineDialinConferencingPolicy.cs" Line="4" Column="48" />
+      <File FileName="configFile.json" Line="2" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Microsoft.Azure.Cosmos.Samples.Bulk" expanded="True">
+            <Node name="Microsoft.Azure.Cosmos.Samples.Bulk" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
