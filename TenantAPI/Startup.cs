@@ -31,7 +31,6 @@ namespace BookStoreAspNetCoreOData8Preview
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<UserStoreContext>(opt => opt.UseCosmos(Configuration["CosmosDB:URL"], Configuration["CosmosDB:PrimaryKey"], Configuration["DatabaseId"]));
-            //services.AddDbContext<BookStoreContext>(opt => opt.UseInMemoryDatabase("BookLists"));
             services.AddControllers();
             services.AddOData(opt => opt.AddModel("odata", GetEdmModel())
                 .AddModel("v{version}", GetEdmModel())

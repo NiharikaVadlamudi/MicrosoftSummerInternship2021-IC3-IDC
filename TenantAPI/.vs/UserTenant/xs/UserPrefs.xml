@@ -1,12 +1,14 @@
 ﻿<Properties StartupConfiguration="{2CE90D46-D06C-4D92-B70E-9D2E24C27B5F}|BookStoreAspNetCoreOData8Preview">
   <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/UsersController.cs">
     <Files>
-      <File FileName="Startup.cs" Line="67" Column="45" IsPinned="True" />
-      <File FileName="Controllers/UsersController.cs" Line="30" Column="34" />
-      <File FileName="Models/User.cs" Line="49" Column="1" />
-      <File FileName="Models/UserStoreContext.cs" Line="22" Column="9" />
-      <File FileName="Program.cs" Line="18" Column="1" />
-      <File FileName="Models/AssignedPlans.cs" Line="1" Column="1" />
+      <File FileName="Models/User.cs" Line="47" Column="50" />
+      <File FileName="Models/DataSource.cs" Line="1" Column="1" />
+      <File FileName="Controllers/UsersController.cs" Line="38" Column="10" />
+      <File FileName="Models/DataProviderErrors.cs" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Models/UserStoreContext.cs" Line="18" Column="189" />
+      <File FileName="Startup.cs" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +20,6 @@
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Wrapper" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
