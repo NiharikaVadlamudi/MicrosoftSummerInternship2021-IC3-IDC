@@ -10,39 +10,36 @@ using UserStore.Controllers;
 using System.Net.Http;
 using System.Web.Http;
 using System.Collections.Generic;
-using UserTenant.Models;
-
 
 namespace UserStore.Controllers
 {
     public class UsersController : ODataController
     {
         private UserStoreContext _db;
-
-        public const int pageSizeFix = 5;
-
-
+      
+        
         public UsersController(UserStoreContext context)
         {
             _db = context;
-            _db.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.TrackAll;
             _db.Database.EnsureCreated();
             _db.SaveChanges();
+            _db.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.TrackAll;
+
         }
 
-        [EnableQuery(PageSize = pageSizeFix)]
+        [EnableQuery(PageSize =2)]
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_db.Users.Include(b=>b.assignedPlans).Include(b=>b.onlineDialinConferencingPolicy).ToList());
+            return Ok(_db.Users.Include(b=>b.assignedPlans).Include(c=>c.assignedPlans).ToList().AsQueryable());
         }
 
 
         [EnableQuery]
         [HttpGet("{id}")]
-        public IActionResult Get(string key,string version)
+        public IActionResult Get(int key,string version)
         {
-            User reqUser = _db.Users.FirstOrDefault(c => c.objectId == key);
+            User reqUser = _db.Users.FirstOrDefault(c => c.tenantId == key);
             try
             {
                 return Ok(reqUser);
