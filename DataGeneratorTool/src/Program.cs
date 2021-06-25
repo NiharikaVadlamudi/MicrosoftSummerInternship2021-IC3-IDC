@@ -10,8 +10,8 @@ namespace Microsoft.Azure.Cosmos.Samples.Bulk
 {
     public class Program
     {
-        private const string EndpointUrl = "https://niharika11988.documents.azure.com:443/";
-        private const string AuthorizationKey = "Z2x9jKwrBbBFR4tXxshJWX0yqnz2BLd9GbBxd109Lm8TD7gSlrrVqfdveTsr0bWERl6wqHZSJFdyQvhXChQXeQ==";
+        private const string EndpointUrl = "****";
+        private const string AuthorizationKey = "*****";
         private const string DatabaseName = "TenantUserData";
         private const string ContainerName = "UserSet";
        
