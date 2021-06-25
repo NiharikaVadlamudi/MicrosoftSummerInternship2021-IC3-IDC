@@ -22,11 +22,6 @@ Operations Available :
 - DELETE 
    - Delete the selected user (via ID) . 
 
-## Week 3 & 4 
-**Target** : To introduce querying & filtering properties , and additional feature of pagination for the current setup. 
-To run it locally : 
-* Run the UserTenant.sln file , under TenantAPI_2 folder . 
-
 
 
 
