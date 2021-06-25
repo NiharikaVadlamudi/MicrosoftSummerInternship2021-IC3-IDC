@@ -15,7 +15,7 @@ namespace UserStore.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseCosmos("https://niharikavad.documents.azure.com:443/", "TqTWepaPTIehm7pmhwBfINNbfXAubhBLH0sQi5jkRFsOgzsWZNnzJB0fjtVTWPzVtbCFGAiUGC9aGPqiqhX9Gg==", "TenantTest");
+            optionsBuilder.UseCosmos("Your_URL", "Your_Key", "TenantTest");
         }
 
         public DbSet<User> Users{ get; set; }
