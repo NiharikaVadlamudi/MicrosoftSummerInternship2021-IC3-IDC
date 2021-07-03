@@ -15,7 +15,7 @@ namespace UserTenantTestAPI.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseCosmos("https://niharikaipdemo.documents.azure.com:443/", "MMrBClJoK7FzHJmgGWOG7ZtOq5jP2uVcqvBLlT83J930GzsCgSDcoiYKPUajVV95rQklbq1eXoI5DOngAoF1xg==", "CloudDemoData2");
+            optionsBuilder.UseCosmos("***", "***", "***");
         }
 
         public DbSet<User> Users { get; set; }
