@@ -44,7 +44,7 @@ To run the tool , you can following steps :
 To run the tool , you can following steps : 
 * git clone https://github.com/NiharikaVadlamudi/MicrosoftSummerInternship2021-IC3-IDC/tree/main/UserTenantAPIDeployement/UserTenantTestAPI
 * Edit the program.cs,usercontext.cs & application.jsons file with relevant database name & primary connection string of the Application Insights tool . 
-
+* On your terminal : $ dotnet run
 
 
 
