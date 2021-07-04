@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "61891501-1177-4de3-8bd0-7be46ebee2d9",
+		"name": "FinalRun-Tenant1 (AsQ)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllUsers-0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users?$filter=pk Eq 'Tenant1'",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "pk Eq 'Tenant1'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SelectQuery-1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users?$select=displayName,tenantNo,interpretedUserType&$filter=pk Eq 'Tenant1'",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "displayName,tenantNo,interpretedUserType"
+						},
+						{
+							"key": "$filter",
+							"value": "pk Eq 'Tenant1'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count-2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users?$count=true&$select=*&$filter=pk Eq 'Tenant1'",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$count",
+							"value": "true"
+						},
+						{
+							"key": "$select",
+							"value": "*"
+						},
+						{
+							"key": "$filter",
+							"value": "pk Eq 'Tenant1'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrderBy-Id (only)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users?$orderby=id&$filter=pk Eq 'Tenant1'",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$orderby",
+							"value": "id"
+						},
+						{
+							"key": "$filter",
+							"value": "pk Eq 'Tenant1'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById(Within TenantSize)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users('1245')?$select=displayName,objectId,tenantNo",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users('1245')"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "displayName,objectId,tenantNo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POSTUserInisdethatTenant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"abracabadra-1121\",\n    \"pk\": \"Tenant1\",\n    \"tenantNo\": \"456\",\n    \"displayName\": \"NiharikaVadlamudi\",\n    \"objectId\": \"3d39f7e5-14a6-4098-9add-3c70690012f5\",\n    \"givenName\": \"NV1234\",\n    \"enterpriseVoiceEnabled\": true,\n    \"interpretedUserType\": \"PureOnlineEnabledUserWithSfBAndTeamsLicense\",\n    \"surname\": \"Vadlamudi\",\n    \"usageLocation\": \"LS\",\n    \"userPrincipalName\": \"nvita72@yahoo.com\",\n    \"dataProviderErrors\": null,\n    \"onlineDialinConferencingPolicy\": {\n        \"authority\": \"guest\",\n        \"name\": \"ServiceAllowed\"\n    },\n    \"assignedPlans\": [\n        {\n            \"servicePlanId\": \"21a4fd18-f3a7-69ad-5d1d-ce7a375217f7\",\n            \"serviceInstance\": \"MicrosoftCommunicationsOnline/BTUA-6M-QEC\",\n            \"subscribedPlanId\": \"9ce04bb5-6d6b-4a5b-8d09-3a4a995806af\",\n            \"assignedTimestamp\": \"1976-10-30T23:02:29.8518278Z\",\n            \"capabilityStatus\": \"Enabled\",\n            \"capability\": \"MCOEV\"\n        },\n        {\n            \"servicePlanId\": \"adddd20b-f49d-62cb-3c34-71f9da132335\",\n            \"serviceInstance\": \"TeamspaceAPI/VTOG-4M-IYA\",\n            \"subscribedPlanId\": \"456d0f9b-8abc-4f40-bd5b-80aafa3dda1a\",\n            \"assignedTimestamp\": \"1995-10-07T17:00:44.356972Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"MCOEV\"\n        },\n        {\n            \"servicePlanId\": \"1374e4a0-7ea6-e922-52a0-135b77a84cbb\",\n            \"serviceInstance\": \"MicrosoftCommunicationsOnline/XCYM-5M-HVE\",\n            \"subscribedPlanId\": \"efa27903-0d42-4d38-a3fb-8da5e95e9faa\",\n            \"assignedTimestamp\": \"1998-07-06T21:07:18.9230525Z\",\n            \"capabilityStatus\": \"Enabled\",\n            \"capability\": \"MCOMEETADD\"\n        },\n        {\n            \"servicePlanId\": \"3f299bba-17dc-0849-8eb3-c93fff507fa5\",\n            \"serviceInstance\": \"TeamspaceAPI/KZVR-1M-ZGH\",\n            \"subscribedPlanId\": \"152f36b0-91bf-46fd-b394-0d161011a093\",\n            \"assignedTimestamp\": \"1977-02-01T22:08:10.236221Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"MCOEV\"\n        },\n        {\n            \"servicePlanId\": \"d684831b-9268-a8da-c4cf-392bf485a07b\",\n            \"serviceInstance\": \"TeamspaceAPI/FHLZ-6M-JXM\",\n            \"subscribedPlanId\": \"7d4b54ec-4fcc-44bd-9687-3e417dc47fc0\",\n            \"assignedTimestamp\": \"1954-08-26T14:09:18.6542142Z\",\n            \"capabilityStatus\": \"Enabled\",\n            \"capability\": \"MCOProfessional\"\n        },\n        {\n            \"servicePlanId\": \"3fda7221-686e-854b-158a-d1d11cb242db\",\n            \"serviceInstance\": \"MicrosoftCommunicationsOnline/WQCB-5M-QFN\",\n            \"subscribedPlanId\": \"47918bad-4443-456a-8260-dbdc0878c0e9\",\n            \"assignedTimestamp\": \"1981-04-17T21:32:56.6217419Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"MCOMEETADD\"\n        },\n        {\n            \"servicePlanId\": \"5ec32ac9-c8b1-8f19-12cd-53a8249f64e2\",\n            \"serviceInstance\": \"MicrosoftCommunicationsOnline/ASGP-2M-CBZ\",\n            \"subscribedPlanId\": \"96ac5f73-73fd-4995-a196-ab9e6626b7d3\",\n            \"assignedTimestamp\": \"1985-08-23T20:24:25.4730057Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"MCOProfessional\"\n        },\n        {\n            \"servicePlanId\": \"e9238b30-c7b1-adef-ef44-fd004beec92e\",\n            \"serviceInstance\": \"MicrosoftCommunicationsOnline/WUDH-8M-IHO\",\n            \"subscribedPlanId\": \"9454ee17-114f-4e5c-aed0-98a9baa16c79\",\n            \"assignedTimestamp\": \"1960-10-15T11:04:06.1992932Z\",\n            \"capabilityStatus\": \"Enabled\",\n            \"capability\": \"MCOProfessional\"\n        },\n        {\n            \"servicePlanId\": \"cb96fd3a-ec22-12ff-20af-52044871b544\",\n            \"serviceInstance\": \"TeamspaceAPI/VPHJ-2M-ECK\",\n            \"subscribedPlanId\": \"5b33c432-e0e8-48f4-86ae-4a6bcee69dcb\",\n            \"assignedTimestamp\": \"1993-09-18T23:53:17.4137653Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"MCOEV\"\n        },\n        {\n            \"servicePlanId\": \"b01052c5-824e-7d62-6921-a3fb6f9030fd\",\n            \"serviceInstance\": \"TeamspaceAPI/JHNI-1M-WWV\",\n            \"subscribedPlanId\": \"41b2c26a-ae03-4362-8d11-68750508e820\",\n            \"assignedTimestamp\": \"1972-05-16T04:18:03.7176312Z\",\n            \"capabilityStatus\": \"Enabled\",\n            \"capability\": \"MCOMEETADD\"\n        },\n        {\n            \"servicePlanId\": \"0512acfb-7dc5-2d6e-58da-9df85e9c72e8\",\n            \"serviceInstance\": \"MicrosoftCommunicationsOnline/MWMB-4M-JRP\",\n            \"subscribedPlanId\": \"fe9682d5-eba5-41ee-bf28-1afca4582526\",\n            \"assignedTimestamp\": \"1959-12-29T16:06:52.673813Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"MCOProfessional\"\n        },\n        {\n            \"servicePlanId\": \"268acb5c-bfdb-7e74-172b-560adb475852\",\n            \"serviceInstance\": \"TeamspaceAPI/SHMG-6M-VFW\",\n            \"subscribedPlanId\": \"4543c9ff-34e5-4c6f-81d8-0081b28f26a8\",\n            \"assignedTimestamp\": \"1998-12-25T13:51:04.5520822Z\",\n            \"capabilityStatus\": \"Enabled\",\n            \"capability\": \"MCOMEETADD\"\n        },\n        {\n            \"servicePlanId\": \"1b6f93dd-9104-bdf3-fefb-38fc6657410c\",\n            \"serviceInstance\": \"TeamspaceAPI/WJRO-9M-BVG\",\n            \"subscribedPlanId\": \"ba59d508-0c1b-418b-bb63-30e91aeecfab\",\n            \"assignedTimestamp\": \"1958-09-07T08:02:34.107496Z\",\n            \"capabilityStatus\": \"Enabled\",\n            \"capability\": \"Teams\"\n        },\n        {\n            \"servicePlanId\": \"2a21cd8e-3b87-2928-0df1-55a628345001\",\n            \"serviceInstance\": \"MicrosoftCommunicationsOnline/DWLY-4M-JAN\",\n            \"subscribedPlanId\": \"24fe5317-a643-4396-bd8d-2d74427b13f9\",\n            \"assignedTimestamp\": \"1997-05-11T21:44:03.047976Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"MCOMEETADD\"\n        },\n        {\n            \"servicePlanId\": \"008276f6-4600-6525-e5a5-db9e3f83b44d\",\n            \"serviceInstance\": \"MicrosoftCommunicationsOnline/VMYQ-3M-SKD\",\n            \"subscribedPlanId\": \"4951268d-e5b1-4ace-9401-7c5cab62b9aa\",\n            \"assignedTimestamp\": \"1953-03-24T14:52:20.5103414Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"MCOProfessional\"\n        },\n        {\n            \"servicePlanId\": \"8d8f6123-4119-d911-c567-aa419fa6aaca\",\n            \"serviceInstance\": \"TeamspaceAPI/GXDT-3M-PAO\",\n            \"subscribedPlanId\": \"b59261fd-7bb1-434d-8563-cc24feab8932\",\n            \"assignedTimestamp\": \"1982-09-12T21:11:47.8412539Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"MCOProfessional\"\n        },\n        {\n            \"servicePlanId\": \"b1f10132-1af7-1a6a-b96d-1a0191a71cd4\",\n            \"serviceInstance\": \"TeamspaceAPI/YTBX-6M-XCN\",\n            \"subscribedPlanId\": \"cd5c0dd8-6d14-4940-985b-39c093bfa9c6\",\n            \"assignedTimestamp\": \"1979-12-31T06:10:39.5509932Z\",\n            \"capabilityStatus\": \"Enabled\",\n            \"capability\": \"MCOProfessional\"\n        },\n        {\n            \"servicePlanId\": \"23a03e35-c7e9-787d-9100-74511f8446fc\",\n            \"serviceInstance\": \"TeamspaceAPI/BWYH-0M-WFJ\",\n            \"subscribedPlanId\": \"695c9002-a6d8-4fcf-a7ba-3962fdfa19b7\",\n            \"assignedTimestamp\": \"1986-02-09T03:38:02.901757Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"Teams\"\n        },\n        {\n            \"servicePlanId\": \"82adcb6e-8153-4109-74fd-0c932ccb42c2\",\n            \"serviceInstance\": \"MicrosoftCommunicationsOnline/BHKQ-2M-YIX\",\n            \"subscribedPlanId\": \"47c46091-6092-42d5-a241-32d1669370ae\",\n            \"assignedTimestamp\": \"1994-01-16T02:34:39.8704796Z\",\n            \"capabilityStatus\": \"Disabled\",\n            \"capability\": \"Teams\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTheCreatedDummyUser-1000",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users('456')",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users('456')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FilteringOnlineConferencePolicy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users?$filter=pk Eq 'Tenant1' and onlineDialinConferencingPolicy/authority eq 'guest'&$select=displayName,tenantNo",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "pk Eq 'Tenant1' and onlineDialinConferencingPolicy/authority eq 'guest'"
+						},
+						{
+							"key": "$select",
+							"value": "displayName,tenantNo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ContainsOperation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users?$filter=pk Eq 'Tenant1' and contains(surname, 'Smith')",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "pk Eq 'Tenant1' and contains(surname, 'Smith')"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SkipFunctionality",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users?$filter=pk Eq 'Tenant1'&$skip=10",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "pk Eq 'Tenant1'"
+						},
+						{
+							"key": "$skip",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ChainofFilters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://usertenantworkic3.azurewebsites.net/vbeta/Users?$filter=pk Eq 'Tenant1' and interpretedUserType Eq 'PureOnlineEnabledUserWithSfBAndTeamsLicense' and onlineDialinConferencingPolicy/name Eq 'ServiceNotAllowed' and enterpriseVoiceEnabled Eq false",
+					"protocol": "https",
+					"host": [
+						"usertenantworkic3",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "pk Eq 'Tenant1' and interpretedUserType Eq 'PureOnlineEnabledUserWithSfBAndTeamsLicense' and onlineDialinConferencingPolicy/name Eq 'ServiceNotAllowed' and enterpriseVoiceEnabled Eq false"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
