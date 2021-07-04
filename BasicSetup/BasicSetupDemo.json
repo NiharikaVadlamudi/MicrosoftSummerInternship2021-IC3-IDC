@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "768d54d6-83bb-4089-afc3-66676f158fe0",
+		"name": "Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MetadataOfUserRecord",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1121/vbeta/$metadata#Users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1121",
+					"path": [
+						"vbeta",
+						"$metadata"
+					],
+					"hash": "Users"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserByTenandID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1121/vbeta/Users(005723ca-757a-4d30-8704-fee5547e95bb)",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1121",
+					"path": [
+						"vbeta",
+						"Users(005723ca-757a-4d30-8704-fee5547e95bb)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatchUserRecord",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"tenantId\": 2,\n    \"displayName\": \"Olivia Rodrigo\",\n    \"enterpriseVoiceEnabled\": true,\n    \"givenName\": \"OLIVE!!!!!\",\n    \"interpretedUserType\": \"PureOnlineEnabledUserWithSfBAndTeamsLicense\",\n    \"objectId\": \"5a84fa48-f26d-455e-94c2-bf2064bf27b1\",\n    \"partitionKey\": \"MSTenants\",\n    \"surname\": \"Kristen\",\n    \"usageLocation\": \"US\",\n    \"userPrincipalName\": \"lizhan1@E2ETest0MDM2P002.onmicrosoft.com\"\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1121/vbeta/Users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1121",
+					"path": [
+						"vbeta",
+						"Users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertUserRecord",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"tenantId\": 30,\n    \"displayName\": \"Jeffie\",\n    \"enterpriseVoiceEnabled\": false,\n    \"givenName\": \"Jeffie Calderon\",\n    \"interpretedUserType\": \"Human Resources\",\n    \"objectId\": \"c72f7302-a777-45d1-86ab-4ec8683d6f8c\",\n    \"partitionKey\": \"MSTenants\",\n    \"surname\": \"Calderon\",\n    \"usageLocation\": \"CN\",\n    \"userPrincipalName\": \"jcalderont@edublogs.org\",\n    \"assignedPlans\": [\n        {\n            \"servicePlanId\": \"1ac8962d-5952-4df7-8253-9a166dd89415\",\n            \"assignedTimestamp\": \"2017-09-27T23:53:13Z\",\n            \"capability\": \"Lexus\",\n            \"capabilityStatus\": \"Enabled\",\n            \"subscribedPlanId\": \"855473203-0\"\n        },\n        {\n            \"servicePlanId\": \"2ddda94b-f724-456a-b0d2-1d17438d6e8a\",\n            \"assignedTimestamp\": \"2017-09-27T23:53:13Z\",\n            \"capability\": \"Oldsmobile\",\n            \"capabilityStatus\": \"Enabled\",\n            \"subscribedPlanId\": \"889187010-2\"\n        },\n        {\n            \"servicePlanId\": \"1392bc5d-a360-4ed8-a86a-03ec8afef4f2\",\n            \"assignedTimestamp\": \"2017-09-27T23:53:13Z\",\n            \"capability\": \"Ford\",\n            \"capabilityStatus\": \"Enabled\",\n            \"subscribedPlanId\": \"835389221-9\"\n        },\n        {\n            \"servicePlanId\": \"1b9b31b2-dcb1-459a-bb3f-c2219323ade6\",\n            \"assignedTimestamp\": \"2017-09-27T23:53:13Z\",\n            \"capability\": \"Chevrolet\",\n            \"capabilityStatus\": \"Enabled\",\n            \"subscribedPlanId\": \"005702511-8\"\n        },\n        {\n            \"servicePlanId\": \"9a78c767-c72c-4580-8a09-7961f9cd87ac\",\n            \"assignedTimestamp\": \"2017-09-27T23:53:13Z\",\n            \"capability\": \"Dodge\",\n            \"capabilityStatus\": \"Enabled\",\n            \"subscribedPlanId\": \"274913479-X\"\n        }\n    ],\n    \"dataProviderErrors\": {},\n    \"onlineDialinConferencingPolicy\": {\n        \"authority\": \"Guest\",\n        \"name\": \"ServiceNotAllowed\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1121/vbeta/Users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1121",
+					"path": [
+						"vbeta",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUserByID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1121/vbeta/Users/1001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1121",
+					"path": [
+						"vbeta",
+						"Users",
+						"1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FilterByTenantID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1121/vbeta/Users?$select=id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1121",
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "id"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MultipleFieldSelections-Selects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1121/vbeta/Users?$select=displayName, usageLocation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1121",
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "displayName, usageLocation"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ComplexQueryRequest-Select,Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1121/vbeta/Users?$select=id,displayName, surname,givenName,usageLocation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1121",
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "id,displayName, surname,givenName,usageLocation"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NestedAttributeQueryFilter- Select,Order,Filtering Internal Property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1121/vbeta/Users?$select=displayName,tenantId&$filter=onlineDialinConferencingPolicy/authority eq 'Guest'",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1121",
+					"path": [
+						"vbeta",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "displayName,tenantId"
+						},
+						{
+							"key": "$filter",
+							"value": "onlineDialinConferencingPolicy/authority eq 'Guest'"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
