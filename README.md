@@ -39,13 +39,14 @@ To run the tool , you can following steps :
 * git clone https://github.com/NiharikaVadlamudi/MicrosoftSummerInternship2021-IC3-IDC/tree/main/DataGeneratorTool
 * Edit the program.cs file with relevant database name & primary connection string . 
 * On your terminal : $ dotnet run 
+* For testing out the application , export the BasicSetupDemo.json file to PostMan Tool . 
 ## Week 7,8 : 
 **Target** : Connecting the service to Application Insights & Azure Monitor , for observing telemetry which will aid in understanding the patterns of cost & detect APIs with high COGS value .
 To run the tool , you can following steps : 
 * git clone https://github.com/NiharikaVadlamudi/MicrosoftSummerInternship2021-IC3-IDC/tree/main/UserTenantAPIDeployement/UserTenantTestAPI
 * Edit the program.cs,usercontext.cs & application.jsons file with relevant database name & primary connection string of the Application Insights tool . 
 * On your terminal : $ dotnet run
-
+* For testing out the application , export the TenantAPI.json file to PostMan Tool . 
 
 
 
