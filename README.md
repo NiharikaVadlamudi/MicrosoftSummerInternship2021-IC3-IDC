@@ -21,6 +21,29 @@ Operations Available :
     - Add new user to the database . 
 - DELETE 
    - Delete the selected user (via ID) . 
+## Week 3 & 4 
+**Target** : Combination of Entity Framework 5.0 & OData 8.0 , for adding filtering & searching support. It supports the following functionalities : 
+- GET (Users)
+    - Fetches all the users present in the database . 
+- GET (by id) 
+    - Returns the user by tenantId . 
+- POST 
+    - Add new user to the database .
+- DELETE 
+   - Delete the selected user (via ID) . 
+- PUT 
+   -Updates the user record. 
+## Week 5 & 6 : 
+**Target** : Building Data Ingestion Tool , on top of Cosmos DB Bulk Insert API that takes an input configuration file with tenant name as key , and tenant size as the value . 
+To run the tool , you can following steps : 
+* git clone https://github.com/NiharikaVadlamudi/MicrosoftSummerInternship2021-IC3-IDC/tree/main/DataGeneratorTool
+* Edit the program.cs file with relevant database name & primary connection string . 
+* On your terminal : $ dotnet run 
+## Week 7,8 : 
+**Target** : Connecting the service to Application Insights & Azure Monitor , for observing telemetry which will aid in understanding the patterns of cost & detect APIs with high COGS value .
+To run the tool , you can following steps : 
+* git clone https://github.com/NiharikaVadlamudi/MicrosoftSummerInternship2021-IC3-IDC/tree/main/UserTenantAPIDeployement/UserTenantTestAPI
+* Edit the program.cs,usercontext.cs & application.jsons file with relevant database name & primary connection string of the Application Insights tool . 
 
 
 
